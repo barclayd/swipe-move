@@ -1,7 +1,14 @@
 {
+  "name": "server",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
   "dependencies": {
-    "@trpc/client": "^11.0.0-rc.657",
-    "@trpc/server": "^11.0.0-rc.657",
+    "@hono/trpc-server": "^0.3.4",
+    "hono": "^4.6.13",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
   }
 }
