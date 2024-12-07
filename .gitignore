@@ -8,4 +8,4 @@
 /build/
 
 # firestore
-/server/service-account.json
+**/service-account.json
