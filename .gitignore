@@ -1,5 +1,11 @@
-node_modules
-yarn.lock
 .code
 .idea
-service-account.json
+.DS_Store
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+
+# firestore
+/server/service-account.json
