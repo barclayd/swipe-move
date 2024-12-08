@@ -22,7 +22,6 @@ jobs:
 
       - name: Create Service Account file
         run: |
-          mkdir -p apps/server
           echo "${{ secrets.FIRESTORE_SERVICE_ACCOUNT_BASE64 }}" | base64 -d > apps/server/service-account.json
 
       - name: Install dependencies
