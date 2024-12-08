@@ -1,6 +1,6 @@
 import { reactRouter } from '@react-router/dev/vite';
-import { reactRouterDevTools } from 'react-router-devtools';
 import tailwindcss from '@tailwindcss/vite';
+import { reactRouterDevTools } from 'react-router-devtools';
 import { defineConfig } from 'vite';
 import babel from 'vite-plugin-babel';
 import tsconfigPaths from 'vite-tsconfig-paths';
