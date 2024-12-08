@@ -9,7 +9,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function loader() {
-  console.log('loader', await client.properties.query());
   return {
     properties: await client.properties.query(),
   };
