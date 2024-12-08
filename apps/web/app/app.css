@@ -1,12 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+@layer theme, base, components, utilities;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+@layer theme {
+    :root {
+        --font-sans: '"Inter"', ui-sans-serif, system-ui, sans-serif
+    }
 }

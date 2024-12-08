@@ -1,5 +1,5 @@
 import { client } from 'index';
-import type { Route } from './+types/home';
+import type { Route } from './+types/_index';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -15,5 +15,5 @@ export async function loader() {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  return <h1>{loaderData.properties[0].id}</h1>;
+  return <h1 className="font-sans text-2xl">{loaderData.properties[0].id}</h1>;
 }

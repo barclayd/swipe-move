@@ -42,7 +42,8 @@ yarn-error.log*
 .idea
 
 # React Router
-/web/.react-router/
+.react-router/
+.vite/
 /build/
 
 # firestore
