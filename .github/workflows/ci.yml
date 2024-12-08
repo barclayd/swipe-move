@@ -20,12 +20,6 @@ jobs:
 
       - uses: oven-sh/setup-bun@v2
 
-      - uses: actions/cache@v4
-        with:
-          path: |
-            ~/.bun/install/cache
-          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
-
       - name: Create Service Account file
         run: |
           echo "${{ secrets.FIRESTORE_SERVICE_ACCOUNT_BASE64 }}" | base64 -d > apps/server/service-account.json
