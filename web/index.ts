@@ -8,5 +8,3 @@ const client = createTRPCProxyClient<AppRouter>({
         }),
     ],
 })
-
-console.log(await client.hello.query('Hono'))
