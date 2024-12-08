@@ -7,11 +7,6 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    name: Build and Test
-    timeout-minutes: 15
-    runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,9 +34,6 @@ jobs:
 
       - name: Install Playwright Browsers
         run: bunx playwright install --with-deps chromium
-
-      - name: Setup lint
-        run: bun add @biomejs/cli-linux-x64
 
       - name: Lint
         run: bun run lint
