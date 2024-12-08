@@ -7,6 +7,7 @@
     "dev": "react-router dev",
     "lint": "bunx biome check --write .",
     "start": "react-router-serve ./build/server/index.js",
+    "test": "bunx playwright test",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@babel/preset-typescript": "7.26.0",
     "@biomejs/biome": "1.9.4",
+    "@playwright/test": "^1.49.0",
     "@react-router/dev": "^7.0.2",
     "@tailwindcss/vite": "^4.0.0-beta.6",
     "@types/node": "^22.10.1",
