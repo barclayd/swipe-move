@@ -10,7 +10,9 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "turbo": "^2.3.3",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "web": "workspace:*",
+    "server": "workspace:*"
   },
   "engines": {
     "bun": ">=2"
