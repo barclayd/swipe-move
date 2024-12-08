@@ -24,6 +24,14 @@ jobs:
         run: |
           echo "${{ secrets.FIRESTORE_SERVICE_ACCOUNT_BASE64 }}" | base64 -d > apps/server/service-account.json
 
+      - name: Cache bun dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
+
+
       - name: Install dependencies
         run: bun install
 
