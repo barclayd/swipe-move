@@ -17,6 +17,13 @@ export const appRouter = router({
       status: input.status,
     });
   }),
+  properties: publicProcedure.query(() => {
+    return [
+      {
+        id: 4,
+      },
+    ];
+  }),
 });
 
 export const createCaller = createCallerFactory(appRouter);
