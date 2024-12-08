@@ -24,7 +24,7 @@ jobs:
         run: bun install
 
       - name: Install Playwright Browsers
-        run: bunx playwright install --with-deps
+        run: bunx playwright install --with-deps chromium
 
       - name: Lint
         run: bun run lint
